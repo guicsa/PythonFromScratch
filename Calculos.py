@@ -10,4 +10,3 @@ print(' o dobro é: {} \n o triplo é {} \n a raiz é : {}'.format(dobro, triplo
 n2 = int(input('Digite um segundo número: '))
 media = (n1 + n2) / 2
 print('A média é {}'.format(media))
-print('ola2')
