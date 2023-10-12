@@ -1,7 +1,7 @@
 import pandas as pd
 import pandas.core.series
 
-df = pd.read_csv("Data/titanic.csv")
+df = pd.read_csv("../99 - Data/titanic.csv")
 
 ages = df["Age"]
 age_sex = df[["Age","Sex","Fare"]]
