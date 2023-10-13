@@ -3,13 +3,12 @@ import pandas.core.series
 
 df = pd.read_csv("../99 - Data/titanic.csv")
 
-ages = df["Age"]
-age_sex = df[["Age","Sex","Fare"]]
-print(age_sex.head())
-print(age_sex.shape)
-above_35 = df[df["Age"]==35]
-print(above_35.shape)
-class_23 = df[df["Pclass"].isin([2 ,3])]
-print(class_23.shape)
-age_known = df[df["Age"].notna()]
-print(age_known.shape)
+adult_names = df.loc[(df["Age"] == 35) & (df["Sex"]=="male"), ["Name", "Sex"]]
+
+print(adult_names.head())
+print(adult_names.shape)
+
+numeric = df.iloc[0:3,5:7]
+
+print(numeric.head())
+print(numeric.shape)
