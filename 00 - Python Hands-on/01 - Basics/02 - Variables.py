@@ -24,6 +24,36 @@ print(f"The price is ${price}")
 
 
 ## STRING
+namme = "Bro"
+food = "pizza"
+email = "bro123@gmail.com"
 
+print(f"Hello {namme}!")
+print(f"You like {food}")
+print (f"Your email is {email}")
 
 ## BOOLEAN
+online = True
+for_sale = False
+running = True
+
+print(f"Are you online?: {online}")
+print(f"Is the item for sale?: {for_sale}")
+print(f"Game running: {running}")
+
+if running:
+    print("The game is running")
+else:
+    print("The game is over")
+
+## Tips and Tricks
+
+x, y,z = 1, 2, 3
+print(x)
+print(y)
+print(z)
+
+x = y = z = 0
+print(x)
+print(y)
+print(z)
