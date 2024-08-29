@@ -36,3 +36,38 @@ print(result)
 
 result = min(x, y, z)
 print(result)
+
+# Math
+import math
+print("Math")
+x = 9.9
+print(math.pi)
+print(math.e)
+result = math.sqrt(x)
+print(result)
+result = math.ceil(x)
+print(result)
+result = math.floor(x)
+print(result)
+
+# 1 - Circumference of a circle
+radius = float(input("Enter the radius of a circle: "))
+
+circumference = 2 * math.pi * radius
+
+print(f"The circumference is: {round(circumference,2)}cm")
+
+# 2 - Area of a circle
+
+area = math.pi * pow(radius,2)
+
+print(f"The area is: {round(area,2)}cm^2")
+
+# 3 - Hypotenuse
+a = float(input("Enter the side A: "))
+b = float(input("Enter the side B: "))
+
+hypotenuse = math.sqrt(pow(a,2) + pow(b,2))
+
+print(f"The hypotenuse is: {round(hypotenuse,2)}")
+
