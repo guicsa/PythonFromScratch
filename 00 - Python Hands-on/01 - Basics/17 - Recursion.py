@@ -23,4 +23,4 @@ def factorial2(x):
     else:
         return x * factorial(x - 1)
         
-print(factorial2(10))
+print(factorial2(6))

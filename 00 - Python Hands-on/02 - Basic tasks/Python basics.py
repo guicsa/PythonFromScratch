@@ -52,16 +52,70 @@
 #print(sum)
 
 ##(T.8) Number guessing game
-import random
-guess = int(input("Try to guess a number between 1 and 100: "))
-randomNumber = random.randint(1, 100)
+#import random
+#guess = int(input("Try to guess a number between 1 and 100: "))
+#randomNumber = random.randint(1, 100)
+#
+#while guess != randomNumber:
+#    if guess > randomNumber:
+#        print(f"The number is less than {guess}")
+#        guess = int(input("Try to guess a number between 1 and 100: "))
+#    elif guess < randomNumber:
+#        print(f"The number is greater than {guess}")
+#        guess = int(input("Try to guess a number between 1 and 100: "))
+#        
+#print(f"Correct! Number is {guess}")
 
-while guess != randomNumber:
-    if guess > randomNumber:
-        print(f"The number is less than {guess}")
-        guess = int(input("Try to guess a number between 1 and 100: "))
-    elif guess < randomNumber:
-        print(f"The number is greater than {guess}")
-        guess = int(input("Try to guess a number between 1 and 100: "))
-        
-print(f"Correct! Number is {guess}")
+##(T.9) Factorials
+#def factorial(x):
+#    result = 1
+#    if x > 0:
+#        for y in range(1, x + 1):
+#            result *= y
+#        return result
+#
+#def factorial2(x):
+#    if x == 1:
+#        return 1
+#    else:
+#        return x * factorial(x - 1)
+#
+#def checkNumber (number):
+#    try:
+#        numberCheck = int(number)
+#        if numberCheck > 0:
+#            return True
+#        else:
+#            return False
+#    except Exception as e:
+#        return False
+#    
+#number = input("Enter a number: ")
+#
+#while checkNumber(number) == False:
+#    number = input("Enter a number greater than 0: ")
+#
+#number = int(number)
+#
+#print(f"The factorial of {number} is", factorial2(number))
+
+
+##(T.11) Sum to Target
+def sumNumbers(nums, target):
+    for i in range(len(nums)):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [i, j]
+    return None  
+
+nums = list(map(int, input("Enter the numbers separed by spaces: ").split()))
+target = int(input("Enter the target: "))
+
+result = sumNumbers(nums, target)
+
+if result:
+    print(f"The sum of {target} is equal to: {result}")
+else:
+    print("No combination found")
+
+
